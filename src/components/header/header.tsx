@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { animated, useSpring } from "@react-spring/web";
 import { Link } from "react-router-dom";
 import { links } from "./header.helper";
@@ -40,9 +40,21 @@ const Header = () => {
     });
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 390 && openMenu) {
+        setOpenMenu(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [openMenu]);
+
   return (
     <>
-      {openMenu && <BurgerMenu openMenu={openMenu} />}
+      {openMenu && <BurgerMenu />}
       <animated.header
         style={{ ...animatedHeader }}
         className="w-full h-[24px]  my-[36px] flex justify-between bg-white"

@@ -14,7 +14,7 @@ const BurgerMenu = () => {
   });
 
   return (
-    <nav className="sm:hidden w-full min-h-screen bg-black/30 fixed top-[96px] left-0">
+    <nav className="sm:hidden w-full min-h-screen bg-black/30 fixed top-[96px] left-0 backdrop-blur-3xl">
       <animated.div
         style={{ ...animatedBurgerMenu }}
         className=" bg-Black py-10 flex flex-col items-center gap-[26px]"
