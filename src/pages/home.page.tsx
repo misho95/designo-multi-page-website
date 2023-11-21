@@ -31,7 +31,7 @@ const HomePage = () => {
         </div>
         <img
           src={HomeBgPattern}
-          className="absolute -right-[100px] lg:right-0"
+          className="absolute scale-150 left-1/2 sm:-right-[100px] lg:right-0"
         />
         <img
           src={HomeHeroPhone}
