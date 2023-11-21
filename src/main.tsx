@@ -6,7 +6,7 @@ import HomePage from "./pages/home.page";
 import Header from "./components/header/header";
 import PageContainer from "./components/shared/page.container";
 import PageContent from "./components/shared/page.content";
-import Footer from "./components/shared/footer/footer";
+import Footer from "./components/footer/footer";
 
 const router = createBrowserRouter([
   {
