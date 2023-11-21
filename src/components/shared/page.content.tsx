@@ -1,15 +1,12 @@
 import { ReactNode } from "react";
+import PageAspect from "./page.aspect";
 
 interface PropsType {
   children: ReactNode;
 }
 
 const PageContent = ({ children }: PropsType) => {
-  return (
-    <div className="w-[327px] sm:w-[689px] lg:w-[1111px] min-h-screen font-jost">
-      {children}
-    </div>
-  );
+  return <PageAspect customStyle="min-h-screen">{children}</PageAspect>;
 };
 
 export default PageContent;
