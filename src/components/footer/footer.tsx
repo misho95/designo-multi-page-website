@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <animated.footer
       style={{ ...animatedFooter }}
-      className="w-full bg-Black h-[815px] lg:h-[393px] flex justify-center relative mt-[200px] pt-[200px]"
+      className="w-full bg-Black h-[815px] sm:h-[423px] lg:h-[393px] flex justify-center relative mt-[200px] pt-[200px]"
     >
       <PageAspect
         customStyle={
@@ -56,7 +56,7 @@ const Footer = () => {
           "text-white flex flex-col gap-[30px] justify-center items-center text-center sm:text-left sm:justify-start sm:items-stretch"
         }
       >
-        <section className="flex flex-col lg:flex-row justify-center items-center sm:items-start sm:justify-between gap-[20px]">
+        <section className="flex flex-col sm:flex-row justify-center items-center sm:items-start sm:justify-between gap-[20px]">
           <img src={Logo} className="w-[202px] h-[27px]" />
           <nav className="flex flex-col sm:flex-row gap-[30px]">
             {links.map((l, index) => {
@@ -69,7 +69,7 @@ const Footer = () => {
           </nav>
         </section>
         <span className="w-full h-[1px] bg-DarkGrey"></span>
-        <section className="flex flex-col lg:flex-row justify-between gap-[20px]">
+        <section className="flex flex-col sm:flex-row justify-between gap-[20px]">
           <div className="text-white/50 w-[223px]">
             <h1 className="font-semibold">Designo Central Office</h1>
             <p>3886 Wellington Street Toronto, Ontario M9C 3J5</p>
