@@ -9,20 +9,20 @@ const GraphicContent = () => {
       id: 1,
       title: "tim brown",
       text: "A book cover designed for Tim Brown’s new release, ‘Change’",
-      img: "src/assets/graphic-design/desktop/image-change.jpg",
+      img: "./assets/graphic-design/desktop/image-change.jpg",
     },
     {
       id: 2,
       title: "boxed water",
       text: "A simple packaging concept made for Boxed Water",
-      img: "src/assets/graphic-design/desktop/image-boxed-water.jpg",
+      img: "./assets/graphic-design/desktop/image-boxed-water.jpg",
     },
     {
       id: 3,
       title: "science!",
       text: `A poster made in collaboration with 
       the Federal Art Project`,
-      img: "src/assets/graphic-design/desktop/image-science.jpg",
+      img: "./assets/graphic-design/desktop/image-science.jpg",
     },
   ];
 
