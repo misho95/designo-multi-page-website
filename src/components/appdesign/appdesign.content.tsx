@@ -9,31 +9,31 @@ const AppDesignContent = () => {
       id: 1,
       title: "airfilter",
       text: "Solving the problem of poor indoor air quality by filtering the air",
-      img: "src/assets/app-design/desktop/image-airfilter.jpg",
+      img: "/assets/app-design/desktop/image-airfilter.jpg",
     },
     {
       id: 2,
       title: "eyecam",
       text: "Product that lets you edit your favorite photos and videos at any time",
-      img: "src/assets/app-design/desktop/image-eyecam.jpg",
+      img: "/assets/app-design/desktop/image-eyecam.jpg",
     },
     {
       id: 3,
       title: "faceit",
       text: "Get to meet your favorite internet superstar with the faceit app",
-      img: "src/assets/app-design/desktop/image-faceit.jpg",
+      img: "/assets/app-design/desktop/image-faceit.jpg",
     },
     {
       id: 4,
       title: "todo",
       text: "A todo app that features cloud sync with light and dark mode",
-      img: "src/assets/app-design/desktop/image-todo.jpg",
+      img: "/assets/app-design/desktop/image-todo.jpg",
     },
     {
       id: 5,
       title: "LOOPSTUDIOS",
       text: "A VR experience app made for Loopstudios",
-      img: "src/assets/app-design/desktop/image-loopstudios.jpg",
+      img: "/assets/app-design/desktop/image-loopstudios.jpg",
     },
   ];
 
