@@ -1,5 +1,4 @@
 import { animated, useSpring } from "@react-spring/web";
-import AppDesignContent from "../components/appdesign/appdesign.content";
 import GraphicContent from "../components/graphic/graphic.content";
 
 const GraphicPage = () => {
