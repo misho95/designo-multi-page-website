@@ -37,7 +37,7 @@ const Footer = () => {
         />
 
         <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center px-[100px] text-white absolute z-20 w-full h-full gap-3 sm:gap-10">
-          <div className="flex flex-col gap-1 w-full lg:w-1/2 text-center">
+          <div className="flex flex-col gap-1 w-full lg:w-1/2 text-center lg:text-left">
             <h1 className="text-[32px] sm:text-[40px] ">
               Let’s talk about your project
             </h1>
@@ -57,7 +57,9 @@ const Footer = () => {
         }
       >
         <section className="flex flex-col sm:flex-row justify-center items-center sm:items-start sm:justify-between gap-[20px]">
-          <img src={Logo} className="w-[202px] h-[27px]" />
+          <Link to={"/"}>
+            <img src={Logo} className="w-[202px] h-[27px]" />
+          </Link>
           <nav className="flex flex-col sm:flex-row gap-[30px]">
             {links.map((l, index) => {
               return (

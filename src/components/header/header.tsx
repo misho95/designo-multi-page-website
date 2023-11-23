@@ -59,7 +59,9 @@ const Header = () => {
         style={{ ...animatedHeader }}
         className="w-full h-[24px]  my-[36px] flex justify-between bg-white select-none"
       >
-        <img src={Logo} className="h-[24px]" />
+        <Link to="/">
+          <img src={Logo} className="h-[24px]" />
+        </Link>
         <span className="hidden sm:block">
           <div className="flex gap-[50px] text-DarkGrey">
             {links.map((l, index) => {
