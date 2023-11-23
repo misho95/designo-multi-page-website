@@ -4,7 +4,7 @@ import ProjectsComponent from "../components/home.page/projects.component";
 import AboutProjectComponent from "../components/home.page/about.project.compontent";
 
 const HomePage = () => {
-  const animateHomePage = useSpring({
+  const animatedPage = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
     config: {
@@ -16,7 +16,7 @@ const HomePage = () => {
 
   return (
     <animated.section
-      style={{ ...animateHomePage }}
+      style={{ ...animatedPage }}
       className={"flex flex-col gap-[60px]"}
     >
       <FrameComponent />

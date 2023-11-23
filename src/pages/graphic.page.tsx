@@ -1,7 +1,8 @@
 import { animated, useSpring } from "@react-spring/web";
-import WebDesignContent from "../components/webdesign/webdesign.content";
+import AppDesignContent from "../components/appdesign/appdesign.content";
+import GraphicContent from "../components/graphic/graphic.content";
 
-const WebDesignPage = () => {
+const GraphicPage = () => {
   const animatedPage = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
@@ -17,9 +18,9 @@ const WebDesignPage = () => {
       style={{ ...animatedPage }}
       className={"flex flex-col gap-[60px]"}
     >
-      <WebDesignContent />
+      <GraphicContent />
     </animated.section>
   );
 };
 
-export default WebDesignPage;
+export default GraphicPage;

@@ -2,7 +2,7 @@ import { animated, useSpring } from "@react-spring/web";
 import AppDesignContent from "../components/appdesign/appdesign.content";
 
 const AppDesignPage = () => {
-  const animateWebDesignPage = useSpring({
+  const animatedPage = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
     config: {
@@ -14,7 +14,7 @@ const AppDesignPage = () => {
 
   return (
     <animated.section
-      style={{ ...animateWebDesignPage }}
+      style={{ ...animatedPage }}
       className={"flex flex-col gap-[60px]"}
     >
       <AppDesignContent />

@@ -9,6 +9,7 @@ import PageContent from "./components/shared/page.content";
 import Footer from "./components/footer/footer";
 import WebDesignPage from "./pages/webdesign.page";
 import AppDesignPage from "./pages/appdesign.page";
+import GraphicPage from "./pages/graphic.page";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,18 @@ const router = createBrowserRouter([
         <PageContent>
           <Header />
           <AppDesignPage />
+        </PageContent>
+        <Footer />
+      </PageContainer>
+    ),
+  },
+  {
+    path: "/graphicdesign",
+    element: (
+      <PageContainer>
+        <PageContent>
+          <Header />
+          <GraphicPage />
         </PageContent>
         <Footer />
       </PageContainer>
