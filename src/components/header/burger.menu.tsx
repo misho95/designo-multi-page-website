@@ -3,7 +3,7 @@ import { links } from "./header.helper";
 import { animated, useSpring } from "@react-spring/web";
 import { useLockBodyScroll } from "@uidotdev/usehooks";
 
-const BurgerMenu = () => {
+const BurgerMenu = ({ setOpenMenu }) => {
   useLockBodyScroll();
   const animatedBurgerMenu = useSpring({
     from: { opacity: 0 },
@@ -23,7 +23,12 @@ const BurgerMenu = () => {
       >
         {links.map((l, index) => {
           return (
-            <Link key={index} to={l.link} className="text-white text-[24px]">
+            <Link
+              onClick={() => setOpenMenu(false)}
+              key={index}
+              to={l.link}
+              className="text-white text-[24px]"
+            >
               {l.name.toUpperCase()}
             </Link>
           );

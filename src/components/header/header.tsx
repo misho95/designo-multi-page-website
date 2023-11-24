@@ -60,7 +60,7 @@ const Header = () => {
 
   return (
     <>
-      {openMenu && <BurgerMenu />}
+      {openMenu && <BurgerMenu setOpenMenu={setOpenMenu} />}
       <animated.header
         style={{ ...animatedHeader }}
         className="w-full h-[24px]  my-[36px] flex justify-between bg-white select-none"

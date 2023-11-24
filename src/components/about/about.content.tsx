@@ -10,7 +10,7 @@ const AboutContent = () => {
           src={aboutHero}
           className="block lg:hidden h-[320px] object-cover object-center"
         />
-        <div className="relative text-white flex flex-col justify-center items-start p-[50px]">
+        <div className="relative text-white flex flex-col justify-center items-center lg:items-start text-center lg:text-left p-[50px]">
           <img src={bgPatternHero} className="absolute left-0 -top-40" />
           <h1 className="text-[32px] sm:text-[48px]">About Us</h1>
           <p className="text-[15px] sm:text-[16px]">
@@ -28,7 +28,7 @@ const AboutContent = () => {
           src={worldClassImg}
           className="h-[320px] lg:h-[640px] object-cover object-center"
         />
-        <div className="relative flex flex-col justify-center items-start p-[50px] gap-[30px]">
+        <div className="relative flex flex-col justify-center items-center lg:items-start text-center lg:text-left p-[50px] gap-[30px]">
           <h1 className="text-[32px] sm:text-[48px] text-Peach">
             World-class talent
           </h1>
