@@ -37,12 +37,12 @@ const ContactContent = () => {
 
   return (
     <>
-      <div className="bg-Peach text-white relative h-[480px] rounded-xl flex overflow-hidden">
+      <div className="bg-Peach text-white relative h-[764px] sm:h-[711px] lg:h-[480px] rounded-xl flex flex-col justify-center items-center lg:flex-row overflow-hidden gap-[20px]">
         <img
           src={pattern}
           className="object-cover absolute bottom-0 w-[640px] h-[640px]"
         />
-        <div className="w-1/2 flex justify-center items-center">
+        <div className="w-11/12 sm:w-full lg:w-1/2 flex justify-center items-center">
           <span className="flex flex-col gap-[20px] w-[480px]">
             <h1 className="text-[48px]">Contact Us</h1>
             <p>
@@ -53,10 +53,10 @@ const ContactContent = () => {
             </p>
           </span>
         </div>
-        <div className="w-1/2 flex justify-center items-center">
+        <div className="w-11/12 sm:w-full lg:w-1/2 flex justify-center items-center">
           <form
             onSubmit={submitForm}
-            className="w-[380px] h-[371px] flex flex-col gap-[20px] justify-center items-end"
+            className="w-[380px] h-[371px] flex flex-col gap-[20px] justify-center items-center sm:items-end"
           >
             <ContactInput
               type={"text"}
@@ -85,7 +85,7 @@ const ContactContent = () => {
               placeholder={"Your Message"}
               className="w-full h-[102px] bg-transparent text-white border-b-[1px] border-white py-[6px] placeholder-white/50 focus:border-b-[2px] focus:outline-none resize-none"
             />
-            <button className="w-[152px] h-[56px] bg-LightPeach text-white rounded-xl">
+            <button className="w-[152px] h-[56px] bg-LightPeach text-white rounded-xl active:bg-white active:text-Black">
               SUBMIT
             </button>
           </form>
