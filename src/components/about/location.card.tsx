@@ -1,6 +1,11 @@
 import bgPattern from "../../assets/shared/desktop/bg-pattern-small-circle.svg";
 
-const LocationCard = ({ img, title }) => {
+interface PropsType {
+  img: string;
+  title: string;
+}
+
+const LocationCard = ({ img, title }: PropsType) => {
   return (
     <div className="flex flex-col justify-center items-center gap-[20px]">
       <span className="w-[202px] h-[202px] relative">
