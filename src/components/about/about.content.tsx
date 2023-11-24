@@ -43,7 +43,7 @@ const AboutContent = () => {
         </div>
         <img src={aboutHero} className="hidden lg:block" />
       </div>
-      <div className="bg-[#FDF3F0] flex flex-col lg:flex-row rounded-lg overflow-hidden">
+      <div className="bg-[#FDF3F0] flex flex-col lg:flex-row rounded-lg overflow-hidden select-none">
         <img
           src={worldClassImg}
           className="h-[320px] lg:h-[640px] object-cover object-center"
@@ -73,7 +73,7 @@ const AboutContent = () => {
           return <LocationCard key={l.id} img={l.img} title={l.name} />;
         })}
       </div>
-      <div className="bg-[#FDF3F0] flex flex-col lg:flex-row rounded-lg overflow-hidden">
+      <div className="bg-[#FDF3F0] flex flex-col lg:flex-row rounded-lg overflow-hidden select-none">
         <img
           src={realDeal}
           className="h-[320px] lg:h-[640px] object-cover object-center lg:hidden"

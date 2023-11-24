@@ -11,6 +11,7 @@ import WebDesignPage from "./pages/webdesign.page";
 import AppDesignPage from "./pages/appdesign.page";
 import GraphicPage from "./pages/graphic.page";
 import AboutPage from "./pages/about.page";
+import LocationsPage from "./pages/location.page";
 
 const router = createBrowserRouter([
   {
@@ -68,6 +69,18 @@ const router = createBrowserRouter([
         <PageContent>
           <Header />
           <AboutPage />
+        </PageContent>
+        <Footer />
+      </PageContainer>
+    ),
+  },
+  {
+    path: "/locations",
+    element: (
+      <PageContainer>
+        <PageContent>
+          <Header />
+          <LocationsPage />
         </PageContent>
         <Footer />
       </PageContainer>

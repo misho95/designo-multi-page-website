@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { animated, useSpring } from "@react-spring/web";
 import { Link } from "react-router-dom";
-import { links } from "./header.helper";
+import { links } from "../shared/data.helper";
 import Logo from "../../assets/shared/desktop/logo-dark.png";
 import IconHamburger from "../../assets/shared/mobile/icon-hamburger.svg";
 import IconHamburgerClose from "../../assets/shared/mobile/icon-close.svg";

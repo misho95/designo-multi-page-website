@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
-import { links } from "./header.helper";
+import { links } from "../shared/data.helper";
 import { animated, useSpring } from "@react-spring/web";
 import { useLockBodyScroll } from "@uidotdev/usehooks";
 
-const BurgerMenu = ({ setOpenMenu }) => {
+interface PropsType {
+  setOpenMenu: (arg: boolean) => void;
+}
+
+const BurgerMenu = ({ setOpenMenu }: PropsType) => {
   useLockBodyScroll();
   const animatedBurgerMenu = useSpring({
     from: { opacity: 0 },

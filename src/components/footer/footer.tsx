@@ -2,7 +2,7 @@ import PageAspect from "../shared/page.aspect";
 import footerPattern from "../../assets/shared/desktop/bg-pattern-call-to-action.svg";
 import { animated, useSpring } from "@react-spring/web";
 import Logo from "../../assets/shared/desktop/logo-light.png";
-import { links } from "../header/header.helper";
+import { links } from "../shared/data.helper";
 import { Link } from "react-router-dom";
 import fbIcon from "../../assets/shared/desktop/icon-facebook.svg";
 import instagramIcon from "../../assets/shared/desktop/icon-instagram.svg";
