@@ -24,7 +24,7 @@ const Footer = () => {
   return (
     <animated.footer
       style={{ ...animatedFooter }}
-      className="w-full bg-Black h-[815px] sm:h-[423px] lg:h-[393px] flex justify-center relative mt-[200px] pt-[200px]"
+      className="w-full bg-Black h-[815px] sm:h-[423px] lg:h-[393px] flex justify-center relative mt-[200px] pt-[250px]"
     >
       <PageAspect
         customStyle={
