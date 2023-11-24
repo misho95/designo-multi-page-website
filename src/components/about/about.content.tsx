@@ -1,20 +1,27 @@
 import aboutHero from "../../assets/about/desktop/image-about-hero.jpg";
 import worldClassImg from "../../assets/about/desktop/image-world-class-talent.jpg";
 import bgPatternHero from "../../assets/about/desktop/bg-pattern-hero-about-desktop.svg";
-
 import realDeal from "../../assets/about/desktop/image-real-deal.jpg";
+import LocationCard from "./location.card";
 
 const AboutContent = () => {
-  const locations = [{ id: 1, name: "canada", img: "" }];
-
-  const LocationCard = () => {
-    return (
-      <div>
-        <img src={""} />
-        <button>SEE LOCATION</button>
-      </div>
-    );
-  };
+  const locations = [
+    {
+      id: 1,
+      name: "canada",
+      img: "/assets/shared/desktop/illustration-canada.svg",
+    },
+    {
+      id: 2,
+      name: "australia",
+      img: "/assets/shared/desktop/illustration-australia.svg",
+    },
+    {
+      id: 3,
+      name: "united kingdom",
+      img: "/assets/shared/desktop/illustration-united-kingdom.svg",
+    },
+  ];
 
   return (
     <>
@@ -61,7 +68,11 @@ const AboutContent = () => {
         </div>
       </div>
 
-      <div>cards</div>
+      <div className="flex flex-col lg:flex-row justify-around select-none gap-[20px]">
+        {locations.map((l) => {
+          return <LocationCard key={l.id} img={l.img} title={l.name} />;
+        })}
+      </div>
       <div className="bg-[#FDF3F0] flex flex-col lg:flex-row rounded-lg overflow-hidden">
         <img
           src={realDeal}
