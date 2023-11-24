@@ -85,7 +85,7 @@ const ContactContent = () => {
               placeholder={"Your Message"}
               className="w-full h-[102px] bg-transparent text-white border-b-[1px] border-white py-[6px] placeholder-white/50 focus:border-b-[2px] focus:outline-none resize-none"
             />
-            <button className="w-[152px] h-[56px] bg-LightPeach text-white rounded-xl active:bg-white active:text-Black">
+            <button className="w-[152px] h-[56px] bg-white text-Black rounded-xl active:bg-LightPeach active:text-white">
               SUBMIT
             </button>
           </form>
