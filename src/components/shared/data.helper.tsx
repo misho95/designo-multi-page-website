@@ -129,7 +129,7 @@ export const locationData = [
     img: "/assets/locations/desktop/image-map-australia.png",
   },
   {
-    id: 2,
+    id: 3,
     title: "United Kingdom",
     pHead: "Designo UK Office",
     pText: "13  Colorado Way Rhyd-y-fro SA8 9GA",
