@@ -10,6 +10,7 @@ import Footer from "./components/footer/footer";
 import WebDesignPage from "./pages/webdesign.page";
 import AppDesignPage from "./pages/appdesign.page";
 import GraphicPage from "./pages/graphic.page";
+import AboutPage from "./pages/about.page";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,18 @@ const router = createBrowserRouter([
         <PageContent>
           <Header />
           <GraphicPage />
+        </PageContent>
+        <Footer />
+      </PageContainer>
+    ),
+  },
+  {
+    path: "/about",
+    element: (
+      <PageContainer>
+        <PageContent>
+          <Header />
+          <AboutPage />
         </PageContent>
         <Footer />
       </PageContainer>

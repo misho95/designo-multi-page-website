@@ -1,7 +1,7 @@
 export const links = [
   {
     name: "our company",
-    link: "/ourcompany",
+    link: "/about",
   },
   {
     name: "locations",
