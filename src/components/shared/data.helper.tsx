@@ -139,3 +139,21 @@ export const locationData = [
     img: "/assets/locations/desktop/image-map-united-kingdom.png",
   },
 ];
+
+export const locations = [
+  {
+    id: 1,
+    name: "canada",
+    img: "/assets/shared/desktop/illustration-canada.svg",
+  },
+  {
+    id: 2,
+    name: "australia",
+    img: "/assets/shared/desktop/illustration-australia.svg",
+  },
+  {
+    id: 3,
+    name: "united kingdom",
+    img: "/assets/shared/desktop/illustration-united-kingdom.svg",
+  },
+];

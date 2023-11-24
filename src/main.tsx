@@ -12,6 +12,7 @@ import AppDesignPage from "./pages/appdesign.page";
 import GraphicPage from "./pages/graphic.page";
 import AboutPage from "./pages/about.page";
 import LocationsPage from "./pages/location.page";
+import ContactPage from "./pages/contact.page";
 
 const router = createBrowserRouter([
   {
@@ -81,6 +82,18 @@ const router = createBrowserRouter([
         <PageContent>
           <Header />
           <LocationsPage />
+        </PageContent>
+        <Footer />
+      </PageContainer>
+    ),
+  },
+  {
+    path: "/contact",
+    element: (
+      <PageContainer>
+        <PageContent>
+          <Header />
+          <ContactPage />
         </PageContent>
         <Footer />
       </PageContainer>
