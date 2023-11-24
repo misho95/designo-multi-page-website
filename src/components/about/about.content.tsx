@@ -2,7 +2,20 @@ import aboutHero from "../../assets/about/desktop/image-about-hero.jpg";
 import worldClassImg from "../../assets/about/desktop/image-world-class-talent.jpg";
 import bgPatternHero from "../../assets/about/desktop/bg-pattern-hero-about-desktop.svg";
 
+import realDeal from "../../assets/about/desktop/image-real-deal.jpg";
+
 const AboutContent = () => {
+  const locations = [{ id: 1, name: "canada", img: "" }];
+
+  const LocationCard = () => {
+    return (
+      <div>
+        <img src={""} />
+        <button>SEE LOCATION</button>
+      </div>
+    );
+  };
+
   return (
     <>
       <div className="bg-Peach flex flex-col lg:flex-row rounded-lg overflow-hidden">
@@ -46,6 +59,35 @@ const AboutContent = () => {
             encapsulates their brand’s story and mission.
           </p>
         </div>
+      </div>
+
+      <div>cards</div>
+      <div className="bg-[#FDF3F0] flex flex-col lg:flex-row rounded-lg overflow-hidden">
+        <img
+          src={realDeal}
+          className="h-[320px] lg:h-[640px] object-cover object-center lg:hidden"
+        />
+        <div className="relative flex flex-col justify-center items-center lg:items-start text-center lg:text-left p-[50px] gap-[30px]">
+          <h1 className="text-[32px] sm:text-[48px] text-Peach">
+            The real deal
+          </h1>
+          <p className="text-[15px] sm:text-[16px] text-Black">
+            As strategic partners in our clients’ businesses, we are ready to
+            take on any challenge as our own. Solving real problems require
+            empathy and collaboration, and we strive to bring a fresh
+            perspective to every opportunity. We make design and technology more
+            accessible and give you tools to measure success.
+          </p>
+          <p className="text-[15px] sm:text-[16px] text-Black">
+            We are visual storytellers in appealing and captivating ways. By
+            combining business and marketing strategies, we inspire audiences to
+            take action and drive real results.
+          </p>
+        </div>
+        <img
+          src={realDeal}
+          className="h-[320px] lg:h-[640px] object-cover object-center hidden lg:block"
+        />
       </div>
     </>
   );
