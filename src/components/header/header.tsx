@@ -10,6 +10,12 @@ import BurgerMenu from "./burger.menu";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
+  useEffect(() => {
+    if (openMenu && window.scrollY > 0) {
+      window.scrollTo(0, 0);
+    }
+  }, [openMenu]);
+
   const animatedHeader = useSpring({
     from: { y: -200 },
     to: { y: 0 },
