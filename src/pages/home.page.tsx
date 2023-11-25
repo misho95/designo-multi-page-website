@@ -17,7 +17,7 @@ const HomePage = () => {
   return (
     <animated.section
       style={{ ...animatedPage }}
-      className={"flex flex-col gap-[60px]"}
+      className={"flex flex-col gap-[100px]"}
     >
       <FrameComponent />
       <ProjectsComponent />

@@ -15,7 +15,7 @@ const LocationsPage = () => {
   return (
     <animated.section
       style={{ ...animatedPage }}
-      className={"flex flex-col gap-[60px]"}
+      className={"flex flex-col gap-[100px]"}
     >
       <LocationContent />
     </animated.section>
