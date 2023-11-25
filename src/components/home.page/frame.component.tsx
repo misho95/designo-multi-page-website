@@ -1,5 +1,6 @@
 import HomeBgPattern from "../../assets/home/desktop/bg-pattern-hero-home.svg";
 import HomeHeroPhone from "../../assets/home/desktop/image-hero-phone.png";
+import Button from "../shared/button";
 
 const FrameComponent = () => {
   return (
@@ -13,9 +14,7 @@ const FrameComponent = () => {
           fully responsive websites, app design, and engaging brand experiences.
           Find out more about our services.
         </p>
-        <button className="w-[152px] h-[56px] bg-white rounded-lg">
-          LEARN MORE
-        </button>
+        <Button title={"LEARN MORE"} />
       </div>
       <img
         src={HomeBgPattern}

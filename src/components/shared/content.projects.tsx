@@ -13,7 +13,7 @@ const ContentProjects = () => {
           to={"/webdesign"}
           className="w-full h-[250px] sm:h-[200px] lg:h-[308px] rounded-xl overflow-hidden relative group"
         >
-          <div className="bg-Peach/70 w-full h-full absolute z-20 hidden group-hover:block"></div>
+          <div className="bg-Peach/70 w-full h-full absolute z-20 opacity-0 group-hover:opacity-100 duration-300"></div>
           <div className="w-full h-full absolute z-20 flex justify-center items-center flex-col gap-6 text-white select-none">
             <h1 className="text-[40px]">Web DESIGN</h1>
             <p>VIEW PROJECTS</p>
@@ -29,7 +29,7 @@ const ContentProjects = () => {
           to={"/appdesign"}
           className="w-full h-[250px] sm:h-[200px] lg:h-[308px] rounded-xl overflow-hidden relative group"
         >
-          <div className="bg-Peach/70 w-full h-full absolute z-20 hidden group-hover:block"></div>
+          <div className="bg-Peach/70 w-full h-full absolute z-20 opacity-0 group-hover:opacity-100 duration-300"></div>
           <div className="w-full h-full absolute z-20 flex justify-center items-center flex-col gap-6 text-white select-none">
             <h1 className="text-[40px]">APP DESIGN</h1>
             <p>VIEW PROJECTS</p>
@@ -46,7 +46,7 @@ const ContentProjects = () => {
           to={"/graphicdesign"}
           className="w-full h-[250px] sm:h-[200px] lg:h-[308px] rounded-xl overflow-hidden relative group"
         >
-          <div className="bg-Peach/70 w-full h-full absolute z-20 hidden group-hover:block"></div>
+          <div className="bg-Peach/70 w-full h-full absolute z-20 opacity-0 group-hover:opacity-100 duration-300"></div>
           <div className="w-full h-full absolute z-20 flex justify-center items-center flex-col gap-6 text-white select-none">
             <h1 className="text-[40px]">GRAPHIC DESIGN</h1>
             <p>VIEW PROJECTS</p>

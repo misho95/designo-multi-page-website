@@ -2,6 +2,7 @@ import LocationCardContainer from "../about/location.card.container";
 import pattern from "../../assets/shared/desktop/bg-pattern-small-circle.svg";
 import ContactInput from "./contact.input";
 import { useState } from "react";
+import Button from "../shared/button";
 
 const ContactContent = () => {
   const [name, setName] = useState("");
@@ -85,9 +86,7 @@ const ContactContent = () => {
               placeholder={"Your Message"}
               className="w-full h-[102px] bg-transparent text-white border-b-[1px] border-white py-[6px] placeholder-white/50 focus:border-b-[2px] focus:outline-none resize-none"
             />
-            <button className="w-[152px] h-[56px] bg-white text-Black rounded-xl active:bg-LightPeach active:text-white">
-              SUBMIT
-            </button>
+            <Button title={"SUBMIT"} />
           </form>
         </div>
       </div>

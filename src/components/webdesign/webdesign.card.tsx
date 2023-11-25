@@ -12,7 +12,7 @@ const WebDesignCard = ({ img, title, text }: PropsType) => {
         className="rounded-t-lg sm:rounded-l-lg lg:rounded-t-lg w-full sm:w-1/2 lg:w-full"
       />
       <div
-        className={`w-full sm:w-1/2 lg:w-full bg-[#FDF3F0] group-hover:bg-Peach p-[10px] text-center rounded-b-lg sm:rounded-r-lg lg:rounded-b-lg flex justify-center items-center flex-col`}
+        className={`w-full sm:w-1/2 lg:w-full bg-[#FDF3F0] group-hover:bg-Peach duration-500 p-[10px] text-center rounded-b-lg sm:rounded-r-lg lg:rounded-b-lg flex justify-center items-center flex-col`}
       >
         <h1 className="text-Peach group-hover:text-white text-[20px] ">
           {title.toUpperCase()}

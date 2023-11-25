@@ -72,7 +72,7 @@ const Header = () => {
           <div className="flex gap-[50px] text-DarkGrey">
             {links.map((l, index) => {
               return (
-                <Link key={index} to={l.link}>
+                <Link key={index} to={l.link} className="hover:underline">
                   {l.name.toUpperCase()}
                 </Link>
               );

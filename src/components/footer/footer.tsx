@@ -9,6 +9,7 @@ import instagramIcon from "../../assets/shared/desktop/icon-instagram.svg";
 import pinterestIcon from "../../assets/shared/desktop/icon-pinterest.svg";
 import twitterIcon from "../../assets/shared/desktop/icon-twitter.svg";
 import youtubeIcon from "../../assets/shared/desktop/icon-youtube.svg";
+import Button from "../shared/button";
 
 const Footer = () => {
   const animatedFooter = useSpring({
@@ -46,9 +47,7 @@ const Footer = () => {
               how our expertise can help your business grow.
             </p>
           </div>
-          <button className="bg-white text-Black active:bg-LightPeach active:text-white w-[152px] h-[56px] rounded-lg">
-            GET IN TOUCH
-          </button>
+          <Button title={"GET IN TOUCH"} />
         </div>
       </PageAspect>
       <PageAspect
@@ -63,7 +62,7 @@ const Footer = () => {
           <nav className="flex flex-col sm:flex-row gap-[30px]">
             {links.map((l, index) => {
               return (
-                <Link key={index} to={l.link}>
+                <Link key={index} to={l.link} className="hover:underline">
                   {l.name.toUpperCase()}
                 </Link>
               );
@@ -81,11 +80,26 @@ const Footer = () => {
             <p>P : +1 253-863-8967 M : contact@designo.co</p>
           </div>
           <div className={"flex gap-3 justify-center items-end select-none"}>
-            <img src={fbIcon} className="w-[24px] h-[24px]" />
-            <img src={youtubeIcon} className="w-[24px] h-[24px]" />
-            <img src={twitterIcon} className="w-[24px] h-[24px]" />
-            <img src={pinterestIcon} className="w-[24px] h-[24px]" />
-            <img src={instagramIcon} className="w-[24px] h-[24px]" />
+            <img
+              src={fbIcon}
+              className="w-[24px] h-[24px] opacity-70 hover:opacity-100"
+            />
+            <img
+              src={youtubeIcon}
+              className="w-[24px] h-[24px] opacity-70 hover:opacity-100"
+            />
+            <img
+              src={twitterIcon}
+              className="w-[24px] h-[24px] opacity-70 hover:opacity-100"
+            />
+            <img
+              src={pinterestIcon}
+              className="w-[24px] h-[24px] opacity-70 hover:opacity-100"
+            />
+            <img
+              src={instagramIcon}
+              className="w-[24px] h-[24px] opacity-70 hover:opacity-100"
+            />
           </div>
         </section>
       </PageAspect>
