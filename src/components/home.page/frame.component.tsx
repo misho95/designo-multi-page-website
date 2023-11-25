@@ -1,6 +1,7 @@
 import HomeBgPattern from "../../assets/home/desktop/bg-pattern-hero-home.svg";
 import HomeHeroPhone from "../../assets/home/desktop/image-hero-phone.png";
-import Button from "../shared/button";
+
+import SharedLink from "../shared/shared.link";
 
 const FrameComponent = () => {
   return (
@@ -14,7 +15,7 @@ const FrameComponent = () => {
           fully responsive websites, app design, and engaging brand experiences.
           Find out more about our services.
         </p>
-        <Button title={"LEARN MORE"} />
+        <SharedLink title={"LEARN MORE"} url="/about" />
       </div>
       <img
         src={HomeBgPattern}

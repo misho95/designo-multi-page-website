@@ -9,7 +9,8 @@ import instagramIcon from "../../assets/shared/desktop/icon-instagram.svg";
 import pinterestIcon from "../../assets/shared/desktop/icon-pinterest.svg";
 import twitterIcon from "../../assets/shared/desktop/icon-twitter.svg";
 import youtubeIcon from "../../assets/shared/desktop/icon-youtube.svg";
-import Button from "../shared/button";
+
+import SharedLink from "../shared/shared.link";
 
 const Footer = () => {
   const animatedFooter = useSpring({
@@ -47,7 +48,7 @@ const Footer = () => {
               how our expertise can help your business grow.
             </p>
           </div>
-          <Button title={"GET IN TOUCH"} />
+          <SharedLink title={"GET IN TOUCH"} url="/contact" />
         </div>
       </PageAspect>
       <PageAspect

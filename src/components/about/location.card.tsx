@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bgPattern from "../../assets/shared/desktop/bg-pattern-small-circle.svg";
 
 interface PropsType {
@@ -14,9 +15,12 @@ const LocationCard = ({ img, title }: PropsType) => {
       </span>
 
       <h1 className="text-[20px]">{title.toUpperCase()}</h1>
-      <button className="w-[152px] h-[56px] bg-Peach rounded-lg text-white">
+      <Link
+        to="/locations"
+        className="w-[152px] h-[56px] bg-Peach rounded-lg text-white flex justify-center items-center hover:opacity-80 duration-200"
+      >
         SEE LOCATION
-      </button>
+      </Link>
     </div>
   );
 };
